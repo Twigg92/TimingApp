@@ -1,13 +1,123 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+  height: 20px;
+  background-color: rgb(226, 84, 48);
+  box-shadow: 0px 3px 7.5px rgba(0,0,0,0.2);
+}
+
+.nav--text {
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+
+.nav--title {
+  color:#ffffff;
+  font-weight: 600;
+}
+
+.nav--icon {
+  height: 34px;
+  margin-right: 10px;
+  color:white;
+}
+
+main {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px;
+  color:#161616;
+}
+
+/*
+.main--header {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-top: 30px;
+}
+
+.main--facts > li {
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  color: rgb(101, 196, 228);
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+*/
+
+.places--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place--container {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px 40px 20px;
+}
+
+.place--info {
+  padding: 30px;
+  text-align: justify;
+}
+
+.place--img {
+  height: 350px;
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  margin: auto;
+  object-fit: cover;
+}
+
+.place--icon {
+  padding-bottom: 1px;
+  color: rgb(226, 84, 48);
+}
+
+.place--location {
+  display: inline;
+  padding-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.place--link {
+  color:rgb(156, 156, 156);
+  padding-left: 20px;
+}
+
+.place--date {
+  font-weight: 700;
+  padding-top: 10px;
 }
